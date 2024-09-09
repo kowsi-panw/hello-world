@@ -7,6 +7,8 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "HelloWorld"
+    Name     = "HelloWorld"
+    git_org  = "kowsi-panw"
+    git_repo = "hello-world"
   }
 }
